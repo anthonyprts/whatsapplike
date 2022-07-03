@@ -1,0 +1,26 @@
+<section class="face-snap-card">
+    <h1 class="display-4">Inscription</h1>
+    <div class="form-card">
+        <h2>Formulaire d'inscription</h2>
+        <form>
+
+            <div class="form-group">
+                <label for="Nom">Pseudo</label>
+                <input id="Nom" type="text" formControlName="Nom" [(ngModel)]="pseudo">
+            </div>
+            
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input id="Email" type="email" formControlName="Email" [(ngModel)]="email">
+            </div>
+            
+            <div class="form-group">
+            
+                <div class="action-buttons">
+                    <button type="submit">Enregistrer</button>
+                    <button (click)="back()">Retour</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

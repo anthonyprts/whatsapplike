@@ -1,0 +1,28 @@
+
+<section class="face-snap-card">
+    <h1 class="display-4">Connexion</h1>
+    <div class="form-card">
+
+        <div class="form-group">
+            <label for="idWAL">Identifiant</label>
+            <input id="idWAL" type="text" [(ngModel)]="identifiantSaisie">
+        </div>
+
+        <div>
+            <button type="submit" (click)="onSubmitForm()">Connexion</button>
+        </div>
+
+        <div class="textCenter">
+            <a class="link-dark" routerLink="/Inscription/">Nouvel utilisateur ?</a>
+        </div>
+
+        <div class="alert alert-danger" role="alert" *ngIf="error">
+            {{messageConnexion}}
+        </div>
+
+
+
+    </div>
+
+</section>
+

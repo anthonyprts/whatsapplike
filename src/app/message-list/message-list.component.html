@@ -1,0 +1,7 @@
+<section class="dim" >
+    
+    <div  *ngIf="listVide" class="textCenter">Aucun message avec cette relation</div>
+    <app-message  *ngFor="let message of messages " [message]="message"> </app-message>
+
+    
+</section>

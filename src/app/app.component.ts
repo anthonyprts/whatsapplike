@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'whatsapplike';
+  isAuthenticated = false;
+  idWALaffect = ""
+  idRelationSelect!:number;
+  identiteRelation!: string;
 }

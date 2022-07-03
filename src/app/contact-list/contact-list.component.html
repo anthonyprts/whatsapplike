@@ -1,0 +1,9 @@
+<section>
+    <h4 class="textCenter">Liste des relations</h4>
+
+    <button class="btn btn-dark" (click)="getRelationList()" >Rafraichir </button>
+    <hr noshade style="width:100%; color:black; height:5px; text-align:left; ">
+    <app-contact *ngFor="let contact of contacts " [contact]="contact"></app-contact>
+
+
+</section>

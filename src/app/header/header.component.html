@@ -1,0 +1,88 @@
+<header>
+    <h1>WAL</h1>
+    <nav>
+        <div>
+            <button (click)="openPopup3()">Profil</button>
+            <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle3}">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Profil</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                {{profil}}
+                            </div>
+            
+                        </div>
+                        <div class="modal-footer">
+            
+                        
+                            <button type="button" class="btn btn-danger" (click)="closePopup3()">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button  type="button"  (click)="openPopup()">Ajouter une relation</button>
+            <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Ajouter une relation</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="Email" style="margin:5px">Email</label>
+                                <input id="Email" type="email"  [(ngModel)]="email">
+                            </div>
+            
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success" (click)="add()">
+                                Ajouter
+                            </button>
+                            <button type="button" class="btn btn-danger" (click)="closePopup()">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button  type="button"  (click)="openPopup2()">Supprimer une relation</button>
+            <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle2}">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Supprimer une relation</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="Email" style="margin:5px">Email</label>
+                                <input id="Email" type="email"  [(ngModel)]="email">
+                            </div>
+            
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-success" (click)="deleteRe()">
+                                Supprimer
+                            </button>
+                            <button type="button" class="btn btn-danger" (click)="closePopup2()">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <button (click)="onDeconnect()">Deconnexion</button>
+        </div>
+
+    </nav>
+</header>

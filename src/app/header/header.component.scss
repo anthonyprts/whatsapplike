@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    background-color: #EEE;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.active {
+    color: #666;
+    text-decoration: underline;
+}
